@@ -17,9 +17,10 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-.polygen {
+.Bannerpolygen {
+  /* banner polygon  */
   clip-path: polygon(0 41%, 100% 0%, 100% 61%, 0% 100%);
 }
+
