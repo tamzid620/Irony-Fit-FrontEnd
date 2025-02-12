@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import "./NavigationBar.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -13,25 +14,30 @@ const nunito = Nunito({
   subsets: ["latin"],
 });
 
+const navlist = [
+  {
+    path: "",
+    name: "Home",
+  },
+  {
+    path: "",
+    name: "Classes",
+  },
+  {
+    path: "",
+    name: "Membership",
+  },
+  {
+    path: "",
+    name: "About",
+  },
+];
+
 const NavigationBar = () => {
-  const navlist = [
-    {
-      path: "",
-      name: "Home",
-    },
-    {
-      path: "",
-      name: "Classes",
-    },
-    {
-      path: "",
-      name: "Membership",
-    },
-    {
-      path: "",
-      name: "About",
-    },
-  ];
+  const [isOpen, setIsOpen] = useState(false);
+  const handleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <nav className={`${nunito.className} bg-white text-black`}>
@@ -70,29 +76,41 @@ const NavigationBar = () => {
           </div>
           {/* menubar section  */}
           <div>
-            <Image src={menuImage} alt="navbar image" className="w-[30px] drop-shadow-lg" />
+            <Image
+            onClick={handleMenu}
+              src={menuImage}
+              alt="navbar image"
+              className="w-[30px] drop-shadow-lg"
+            />
           </div>
         </div>
-         {/* join button  */}
-         <div className="flex justify-center bg-[#1AAD49] group">
-         <button className="uppercase font-extrabold text-sm flex items-center py-4 text-white group-hover:text-black"> 
-         <TbArrowBadgeRightFilled size={25}  />
-          <h1 className="relative group">
-            <span className="relative text-lg">Join</span>
-          </h1>
-        </button>
-         </div>
-         {/* ul section  */}
-        <ul className="block text-center ">
-          {navlist.map(({ path, name }, index) => (
-            <Link key={index} href={path} className="relative group">
-              <li className=" uppercase font-extrabold text-sm relative leading-[50px]">
-                {name}
-              </li>
-              <hr className="navHrPolygen absolute top-5 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-            </Link>
-          ))}
-        </ul>
+        {/* join button  */}
+        <div className="flex justify-center bg-[#1AAD49] group">
+          <button
+            className="uppercase font-extrabold text-sm flex items-center py-4 text-white group-hover:text-black"
+          >
+            <TbArrowBadgeRightFilled size={25} />
+            <h1 className="relative group">
+              <span className="relative text-lg">Join</span>
+            </h1>
+          </button>
+        </div>
+        {/* ul section  */}
+        <div
+  className={`overflow-hidden transition-all duration-500 ease-in-out ${
+    isOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
+  }`}
+>
+  <ul className="block text-center">
+    {navlist.map(({ path, name }, index) => (
+      <Link key={index} href={path} className="relative group block">
+        <li className="uppercase font-extrabold text-sm relative leading-[50px] hover:bg-[#1aad48b4] hover:text-white">
+          {name}
+        </li>
+      </Link>
+    ))}
+  </ul>
+</div>
       </div>
     </nav>
   );
