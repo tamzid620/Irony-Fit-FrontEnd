@@ -4,9 +4,9 @@ import "./NavigationBar.css";
 import Link from "next/link";
 import Image from "next/image";
 import navImage from "@/assests/icons/navImage.jpg";
-import menuImage from "@/assests/icons/menu.png";
+import menuImage from "@/assests/icons/white-menu.png";
 import arrowImage from "@/assests/icons/right-chevron.png";
-import { Nunito  } from "next/font/google";
+import { Nunito } from "next/font/google";
 import { TbArrowBadgeRightFilled } from "react-icons/tb";
 
 const nunito = Nunito({
@@ -40,9 +40,9 @@ const NavigationBar = () => {
   };
 
   return (
-    <nav className=" bg-black text-white py-1">
+    <nav className=" bg-black text-[#D6FB00] py-1 z-50 relative">
       {/* navlist for large and medium device >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
-      <div className="lg:flex md:flex sm: hidden justify-between items-center  mx-6 ">
+      <div className="lg:flex md:flex sm: hidden justify-between items-center  px-6 shadow-sm shadow-[#D6FB00] relative z-50">
         {/* image section  */}
         <div>
           <Image src={navImage} alt="navbar image" className="w-[90px]" />
@@ -59,7 +59,7 @@ const NavigationBar = () => {
           ))}
         </ul>
         {/* join button  */}
-        <button className="uppercase font-extrabold text-sm flex items-center">
+        <button className="uppercase text-white font-extrabold text-sm flex items-center">
           <Image src={arrowImage} alt="navbar image" className="w-[30px]" />
           <h1 className="relative group">
             <span className="relative">Join</span>
@@ -68,7 +68,7 @@ const NavigationBar = () => {
         </button>
       </div>
       {/* navlist for small device >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/}
-      <div className="md:hidden sm: block">
+      <div className="md:hidden sm: block ">
         <div className="flex justify-between items-center mx-6 py-2">
           {/* image section  */}
           <div>
@@ -77,7 +77,7 @@ const NavigationBar = () => {
           {/* menubar section  */}
           <div>
             <Image
-            onClick={handleMenu}
+              onClick={handleMenu}
               src={menuImage}
               alt="navbar image"
               className="w-[30px] drop-shadow-lg"
@@ -86,9 +86,7 @@ const NavigationBar = () => {
         </div>
         {/* join button  */}
         <div className="flex justify-center bg-[#D6FB00] group hover:bg-black">
-          <button
-            className="uppercase font-extrabold text-sm flex items-center py-4 text-black group-hover:text-white"
-          >
+          <button className="uppercase font-extrabold text-sm flex items-center py-4 text-black group-hover:text-white">
             <TbArrowBadgeRightFilled size={25} />
             <h1 className="relative group">
               <span className="relative text-lg">Join</span>
@@ -97,20 +95,20 @@ const NavigationBar = () => {
         </div>
         {/* ul section  */}
         <div
-  className={`overflow-hidden transition-all duration-500 ease-in-out  z-10 ${
-    isOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
-  }`}
->
-  <ul className={`${nunito.className} block text-center `}>
-    {navlist.map(({ path, name }, index) => (
-      <Link key={index} href={path} className="relative group block">
-        <li className="uppercase font-extrabold text-sm relative leading-[50px] hover:bg-[#D6FB00] ">
-          {name}
-        </li>
-      </Link>
-    ))}
-  </ul>
-</div>
+          className={`overflow-hidden transition-all duration-500 ease-in-out shadow-sm shadow-[#D6FB00]  ${
+            isOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <ul className={`${nunito.className} block text-center relative z-50`}>
+            {navlist.map(({ path, name }, index) => (
+              <Link key={index} href={path} className="relative group block">
+                <li className="uppercase font-extrabold text-sm relative leading-[50px] hover:bg-[#D6FB00] hover:text-black">
+                  {name}
+                </li>
+              </Link>
+            ))}
+          </ul>
+        </div>
       </div>
     </nav>
   );

@@ -2,7 +2,7 @@
 import React from "react";
 import "./Bannert.css";
 import Image from "next/image";
-import bannerImage from "@/assests/images/ironyFit Home Banner.jpg";
+import bannerImage from "@/assests/images/ironyFit Home Banner1.jpg";
 import downArrrow from "@/assests/icons/downward-arrow.png";
 import { useTypewriter } from "react-simple-typewriter";
 
@@ -17,26 +17,32 @@ const Banner = () => {
   });
 
   return (
-    <div>
+    <div className="relative z-10">
       {/* Banner Image section  */}
       <div>
         <Image
           src={bannerImage}
           alt="Banner Image"
-          className="w-full lg:h-[700px] md:h-full sm: h-full"
+          className=" w-full lg:h-[700px] md:h-[600px] sm: h-[550px] object-cover"
         />
       </div>
       {/* polygen div >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
 
-      <div className="absolute top-[45%] left-[40%] z-10">
+      <div className="absolute
+      lg:top-[40%] lg:left-[41%] 
+      md:top-[20%] md:left-[28%] 
+      sm: top-[20%] sm: left-[10%] 
+      ">
         {/* Polygon 1 */}
-        <div className="Bannerpolygen  flex items-center justify-center">
+        <div className="Bannerpolygen flex items-center justify-center 
+        w-[350px] h-[200px]">
           <p className="w-[450px] h-[75px] text-center -rotate-[10deg] text-3xl font-extrabold uppercase text-black">
             <span>Work</span> <br />
             <span>{text1}</span>
           </p>
         </div>
-        <div className="Transpolygen" />
+        <div className="Transpolygen
+        w-[350px] h-[40px]" />
 
         {/* Polygon 2 */}
         <div className="Bannerpolygen flex items-center justify-center mt-24">
@@ -45,7 +51,8 @@ const Banner = () => {
             <span>{text2}</span>
           </p>
         </div>
-        <div className="Transpolygen" />
+        <div className="Transpolygen
+        w-[350px] h-[40px]" />
 
         {/* Polygon 3 */}
         <div className="Bannerpolygen flex items-center justify-center mt-48">
