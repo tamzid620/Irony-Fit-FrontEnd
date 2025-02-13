@@ -1,0 +1,4 @@
+.Bannerpolygen {
+    /* banner polygon  */
+    clip-path: polygon(0 41%, 100% 0%, 100% 61%, 0% 100%);
+  }

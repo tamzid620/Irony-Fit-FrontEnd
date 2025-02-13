@@ -97,7 +97,7 @@ const NavigationBar = () => {
         </div>
         {/* ul section  */}
         <div
-  className={`overflow-hidden transition-all duration-500 ease-in-out ${
+  className={`overflow-hidden transition-all duration-500 ease-in-out  z-10 ${
     isOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
   }`}
 >
