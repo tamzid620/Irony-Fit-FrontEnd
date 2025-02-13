@@ -1,9 +1,11 @@
 poluygon css link : https://bennettfeely.com/clippy/
 
-defalut color (dark-green) : #1AAD49 ;
+defalut color (nion) : #D6FB00 ;
 
 <!-- font style section  -->
 [
+  import { } from "next/font/google";
+
 const merriweather = Merriweather({
   weight: ["300", "400", "700", "900"],
   variable: "--font-Merriweather",
@@ -11,7 +13,7 @@ const merriweather = Merriweather({
 });
 
 const nunito = Nunito({
-  weight: ['400'],
+ weight: ["300", "400", "700", "900"],
   variable: "--font-nunito",
   subsets: ["latin"],
 });
