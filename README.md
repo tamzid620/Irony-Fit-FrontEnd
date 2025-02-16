@@ -6,17 +6,15 @@ defalut color (nion) : #D6FB00 ;
 [
   import { } from "next/font/google";
 
-const merriweather = Merriweather({
+const rubik = Rubik({
   weight: ["300", "400", "700", "900"],
-  variable: "--font-Merriweather",
   subsets: ["latin"],
 });
 
 const nunito = Nunito({
  weight: ["300", "400", "700", "900"],
-  variable: "--font-nunito",
   subsets: ["latin"],
 });
 
- className={`${nunito.className} ${merriweather.className}  `}
+ className={`${nunito.className} ${rubik.className}  `}
 ]

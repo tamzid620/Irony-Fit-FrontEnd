@@ -40,7 +40,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <nav className=" bg-black text-[#D6FB00] py-1 z-50 relative">
+    <nav className=" bg-gray-900 text-[#D6FB00] py-1 z-50 relative">
       {/* navlist for large and medium device >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
       <div className="lg:flex md:flex sm: hidden justify-between items-center  px-6 shadow-sm shadow-[#D6FB00] relative z-50">
         {/* image section  */}

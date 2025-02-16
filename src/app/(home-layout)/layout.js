@@ -1,7 +1,7 @@
 import React from 'react';
 import ".././globals.css";
-import NavigationBar from '../Components/Shared/NavigationBar/NavigationBar';
-import Footer from '../Components/Shared/Footer/Footer';
+import NavigationBar from '../Components/UserLayout/NavigationBar/NavigationBar';
+import Footer from '../Components/UserLayout/Footer/Footer';
 
 
 export const metadata = {

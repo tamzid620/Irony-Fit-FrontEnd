@@ -32,11 +32,12 @@ const Banner = () => {
       lg:top-[40%] lg:left-[41%] 
       md:top-[20%] md:left-[28%] 
       sm: top-[20%] sm: left-[10%] 
+      text-gray-900
       ">
         {/* Polygon 1 */}
         <div className="Bannerpolygen flex items-center justify-center 
         w-[350px] h-[200px]">
-          <p className="w-[450px] h-[75px] text-center -rotate-[10deg] text-3xl font-extrabold uppercase text-black">
+          <p className="w-[450px] h-[75px] text-center -rotate-[10deg] text-3xl font-extrabold uppercase">
             <span>Work</span> <br />
             <span>{text1}</span>
           </p>
@@ -46,7 +47,7 @@ const Banner = () => {
 
         {/* Polygon 2 */}
         <div className="Bannerpolygen flex items-center justify-center mt-24">
-          <p className=" w-[450px] h-[75px] text-center -rotate-[10deg] text-3xl font-extrabold uppercase text-black">
+          <p className=" w-[450px] h-[75px] text-center -rotate-[10deg] text-3xl font-extrabold uppercase">
             <span>Feel</span> <br />
             <span>{text2}</span>
           </p>
@@ -56,7 +57,7 @@ const Banner = () => {
 
         {/* Polygon 3 */}
         <div className="Bannerpolygen flex items-center justify-center mt-48">
-          <p className="flex justify-center items-center -rotate-[5deg] text-3xl font-extrabold uppercase text-black">
+          <p className="flex justify-center items-center -rotate-[5deg] text-3xl font-extrabold uppercase">
             <Image
             src={downArrrow}
             alt="down arrow icon"
