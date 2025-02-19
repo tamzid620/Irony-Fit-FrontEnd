@@ -5,8 +5,12 @@ import ClasseDesignForU from '../Components/Shared/UserShared/ClasseDesignForU/C
 const Home = () => {
     return (
         <div>
-            <Banner/>
-            <ClasseDesignForU/>
+            <Banner />
+            <div className='flex justify-center'>
+                <div className='max-w-6xl'>
+                    <ClasseDesignForU />
+                </div>
+            </div>
         </div>
     );
 };
