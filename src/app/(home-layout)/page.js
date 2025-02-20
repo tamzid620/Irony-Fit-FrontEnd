@@ -7,7 +7,7 @@ const Home = () => {
         <div>
             <Banner />
             <div className='flex justify-center'>
-                <div className='max-w-6xl'>
+                <div className='lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-0'>
                     <ClasseDesignForU />
                 </div>
             </div>
