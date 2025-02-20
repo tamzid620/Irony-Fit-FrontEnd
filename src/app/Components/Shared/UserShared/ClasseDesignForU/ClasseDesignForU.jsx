@@ -1,5 +1,4 @@
 import React from "react";
-import { Rubik, Nunito } from "next/font/google";
 import "./ClasseDesignForU.css";
 import Image from "next/image";
 import photo1 from "@/assests/images/cdfu1.jpg";
@@ -7,6 +6,7 @@ import photo2 from "@/assests/images/cdfu2.jpg";
 import photo3 from "@/assests/images/cdfu3.jpg";
 import photo4 from "@/assests/images/cdfu4.jpg";
 import rightArrow from "@/assests/icons/right-chevron.png";
+import { Rubik, Nunito } from "next/font/google";
 
 const rubik = Rubik({
   weight: ["300", "400", "700", "900"],
@@ -47,7 +47,8 @@ const imageData = [
 
 const ClasseDesignForU = () => {
   return (
-    <div className="mt-32">
+    <div className="flex justify-center">
+    <div className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-0 mt-32 ">
       <h1
         className={` ${rubik.className} text-white uppercase font-bold text-center  mb-20`}
       >
@@ -88,6 +89,7 @@ const ClasseDesignForU = () => {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 };
