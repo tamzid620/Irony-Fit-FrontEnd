@@ -1,3 +1,4 @@
+'use client' ;
 import React from "react";
 import "./ClasseDesignForU.css";
 import Image from "next/image";
@@ -7,6 +8,7 @@ import photo3 from "@/assests/images/cdfu3.jpg";
 import photo4 from "@/assests/images/cdfu4.jpg";
 import rightArrow from "@/assests/icons/right-chevron.png";
 import { Rubik, Nunito } from "next/font/google";
+import Swal from "sweetalert2";
 
 const rubik = Rubik({
   weight: ["300", "400", "700", "900"],
@@ -46,6 +48,15 @@ const imageData = [
 ];
 
 const ClasseDesignForU = () => {
+
+const handleProcess = () => {
+  Swal.fire({
+    title: "Site Under Progress!",
+    icon: "warning",
+    draggable: true
+  });
+}
+
   return (
     <div className="flex justify-center">
     <div className="lg:max-w-7xl md:max-w-3xl sm: max-w-sm mx-0 mt-32 ">
@@ -60,7 +71,7 @@ const ClasseDesignForU = () => {
         <div className="mt-10 text-start grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 gap-8">
           {imageData.map((data) => (
             <div key={data.id} className="h-[400px] lg:mb-0 md:mb-14 sm: mb-14 group">
-              <div className="card-zoom">
+              <div onClick={handleProcess} className="card-zoom">
                 <figure className="zoom-effect">
                   <Image
                     className="card-image bg-gray-200 "
