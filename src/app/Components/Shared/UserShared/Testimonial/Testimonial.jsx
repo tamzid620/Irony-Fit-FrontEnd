@@ -1,7 +1,9 @@
 import React from "react";
 import { Rubik, Nunito } from "next/font/google";
 import coverPhoto from "@/assests/images/SecondCover.jpg";
-import arrowphoto from "@/assests/icons/right-chevron.png";
+import arrowPhoto from "@/assests/icons/right-chevron.png";
+import apostrophe from "@/assests/icons/double-quotes.png";
+import trainerPhoto from "@/assests/images/trainer.jpg";
 import Image from "next/image";
 
 const rubik = Rubik({
@@ -25,19 +27,23 @@ const Testimonial = () => {
       />
       {/* title section ------------------------------ */}
       <div className="flex justify-center">
-        <div className=" lg:max-w-7xl md:max-w-3xl sm: max-w-sm mx-0">
+        <div className="relative lg:max-w-7xl md:max-w-3xl sm: max-w-sm mx-0">
+          <div className="group">
           <div
-            className={` ${rubik.className} bg-red-500 py-20 text-center text-gray-800 uppercase font-bold`}
+            className={` ${rubik.className} relative w-[1000px] py-32 text-center text-gray-800 uppercase font-bold`}
           >
             <h1 className="text-3xl">Together We</h1>
-            <h1 className="text-6xl -mt-2">Succeed</h1>
+            <h1 className="text-7xl -mt-2">Succeed</h1>
           </div>
-          <div>
-          <Image
-        src={arrowphoto}
-        alt="cover photo"
-        className="w-full object-cover -rotate-45"
-      />
+          {/* arrow icon  */}
+          <div className="absolute -top-[270px] -right-[270px] transition-transform duration-500 group-hover:translate-x-10">
+            <Image
+              src={arrowPhoto}
+              alt="cover photo"
+              className="w-full object-cover -rotate-45"
+            />
+          </div>
+
           </div>
         </div>
       </div>
