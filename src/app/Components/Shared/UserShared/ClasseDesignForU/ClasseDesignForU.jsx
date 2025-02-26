@@ -59,7 +59,7 @@ const handleProcess = () => {
 
   return (
     <div className="flex justify-center">
-    <div className="lg:max-w-7xl md:max-w-3xl sm: max-w-sm mx-0 mt-32 ">
+    <div className="lg:max-w-7xl md:max-w-3xl sm: max-w-sm lg:mx-0 md:mx-8 sm: mx-10 mt-32 ">
       <h1
         className={` ${rubik.className} text-white uppercase font-bold text-center  mb-20`}
       >

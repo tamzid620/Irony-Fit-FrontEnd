@@ -18,3 +18,6 @@ const nunito = Nunito({
 
  className={`${nunito.className} ${rubik.className}  `}
 ]
+
+
+trial website : https://themes.vamtam.com/?theme=f7&n=1

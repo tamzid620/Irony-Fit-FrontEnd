@@ -27,7 +27,7 @@ const Testimonial = () => {
       />
       {/* title section ------------------------------ */}
       <div className="flex justify-center">
-        <div className="relative lg:max-w-7xl md:max-w-3xl sm: max-w-sm mx-0">
+        <div className="relative lg:max-w-7xl md:max-w-3xl sm: max-w-sm lg:mx-0 md:mx-8 sm: mx-10">
           <div className="group">
           <div
             className={` ${rubik.className} relative w-[1000px] py-32 text-center text-gray-800 uppercase font-bold`}
@@ -36,7 +36,7 @@ const Testimonial = () => {
             <h1 className="text-7xl -mt-2">Succeed</h1>
           </div>
           {/* arrow icon  */}
-          <div className="absolute -top-[270px] -right-[270px] transition-transform duration-500 group-hover:translate-x-10">
+          <div className="absolute -top-[270px] -right-[180px] transition-transform duration-500 group-hover:translate-x-10">
             <Image
               src={arrowPhoto}
               alt="cover photo"
