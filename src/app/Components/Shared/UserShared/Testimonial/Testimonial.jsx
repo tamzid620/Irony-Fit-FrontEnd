@@ -8,13 +8,13 @@ import Image from "next/image";
 
 const rubik = Rubik({
   weight: ["300", "400", "700", "900"],
-  //   subsets: ["latin"],
+    subsets: ["latin"],
 preload: true, 
 });
 
 const nunito = Nunito({
   weight: ["300", "400", "700", "900"],
-  //   subsets: ["latin"],
+    subsets: ["latin"],
 preload: true, 
 });
 
