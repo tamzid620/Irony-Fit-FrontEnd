@@ -11,7 +11,7 @@ import { TbArrowBadgeRightFilled } from "react-icons/tb";
 
 const nunito = Nunito({
   weight: ["300", "400", "700", "900"],
-  subsets: ["latin"],
+  
 });
 
 const navlist = [

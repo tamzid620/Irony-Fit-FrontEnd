@@ -8,12 +8,12 @@ import { Rubik, Nunito } from "next/font/google";
 
 const rubik = Rubik({
   weight: ["300", "400", "700", "900"],
-  //   subsets: ["latin"],
+  //   
 });
 
 const nunito = Nunito({
   weight: ["300", "400", "700", "900"],
-  //   subsets: ["latin"],
+  //   
 });
 
 const IntroductionIF = () => {

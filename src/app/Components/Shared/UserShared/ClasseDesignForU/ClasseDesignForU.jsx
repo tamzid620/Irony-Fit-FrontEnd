@@ -12,10 +12,12 @@ import Swal from "sweetalert2";
 
 const rubik = Rubik({
   weight: ["300", "400", "700", "900"],
+    
 });
 
 const nunito = Nunito({
   weight: ["300", "400", "700", "900"],
+    
 });
 
 const imageData = [
