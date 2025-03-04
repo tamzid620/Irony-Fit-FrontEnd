@@ -23,3 +23,6 @@ preload: true,
 
 
 trial website : https://themes.vamtam.com/?theme=f7&n=1
+
+
+live domain link : https://irony-fit.vercel.app/
