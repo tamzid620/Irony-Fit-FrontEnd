@@ -8,12 +8,14 @@ defalut color (nion) : #D6FB00 ;
 
 const rubik = Rubik({
   weight: ["300", "400", "700", "900"],
-  
+  subsets: ["latin"],
+preload: true, 
 });
 
 const nunito = Nunito({
  weight: ["300", "400", "700", "900"],
-  
+  subsets: ["latin"],
+preload: true, 
 });
 
  className={`${nunito.className} ${rubik.className}  `}
