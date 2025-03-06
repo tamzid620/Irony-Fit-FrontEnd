@@ -8,14 +8,14 @@ import Image from "next/image";
 
 const rubik = Rubik({
   weight: ["300", "400", "700", "900"],
-    subsets: ["latin"],
-preload: true, 
+  subsets: ["latin"],
+  preload: true,
 });
 
 const nunito = Nunito({
   weight: ["300", "400", "700", "900"],
-    subsets: ["latin"],
-preload: true, 
+  subsets: ["latin"],
+  preload: true,
 });
 
 const Testimonial = () => {
@@ -31,21 +31,23 @@ const Testimonial = () => {
       <div className="flex justify-center">
         <div className="relative lg:max-w-7xl md:max-w-3xl sm: max-w-sm lg:mx-0 md:mx-8 sm: mx-10">
           <div className="group">
-          <div
-            className={` ${rubik.className} relative w-[1000px] py-32 text-center text-gray-800 uppercase font-bold`}
-          >
-            <h1 className="text-3xl">Together We</h1>
-            <h1 className="text-7xl -mt-2">Succeed</h1>
-          </div>
-          {/* arrow icon  */}
-          <div className="absolute -top-[270px] -right-[180px] transition-transform duration-500 group-hover:translate-x-10">
-            <Image
-              src={arrowPhoto}
-              alt="cover photo"
-              className="w-full object-cover -rotate-45"
-            />
-          </div>
-
+            <div
+              className={` ${rubik.className} relative w-[1000px] py-32 text-center text-gray-800 uppercase font-bold`}
+            >
+              <h1 className="text-3xl">Together We</h1>
+              <h1 className="text-7xl -mt-2">Succeed</h1>
+            </div>
+            {/* arrow icon  */}
+            <div className="absolute -top-[270px] -right-[180px] transition-transform duration-500 group-hover:translate-x-10">
+              <Image
+                src={arrowPhoto}
+                alt="cover photo"
+                className="w-full object-cover -rotate-45"
+              />
+            </div>
+            <p className="text-center py-10 text-2xl uppercase">
+              more section in progress...
+            </p>
           </div>
         </div>
       </div>
