@@ -7,6 +7,7 @@ import downArrrow from "@/assests/icons/downward-arrow.png";
 import { useTypewriter } from "react-simple-typewriter";
 
 const Banner = () => {
+  
   const [text1] = useTypewriter({
     words: ["Hard", "Pays Off"],
     loop: 0,
@@ -46,7 +47,7 @@ const Banner = () => {
         w-[350px] h-[40px]" />
 
         {/* Polygon 2 */}
-        <div className="Bannerpolygen flex items-center justify-center mt-24">
+        <div  className="Bannerpolygen flex items-center justify-center mt-24">
           <p className=" w-[450px] h-[75px] text-center -rotate-[15deg] text-3xl font-extrabold uppercase">
             <span>Feel</span> <br />
             <span>{text2}</span>
@@ -56,7 +57,7 @@ const Banner = () => {
         w-[350px] h-[40px]" />
 
         {/* Polygon 3 */}
-        <div className="Bannerpolygen flex items-center justify-center mt-48">
+        <div  className="Bannerpolygen flex items-center justify-center mt-48">
           <p className="flex justify-center items-center  text-3xl font-extrabold uppercase">
             <Image
             src={downArrrow}

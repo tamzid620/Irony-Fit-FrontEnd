@@ -6,6 +6,7 @@ import if2 from "@/assests/images/IIF3.jpg";
 import if3 from "@/assests/images/IIF2.jpg";
 import { Rubik, Nunito } from "next/font/google";
 
+
 const rubik = Rubik({
   weight: ["300", "400", "700", "900"],
     subsets: ["latin"],
@@ -19,6 +20,8 @@ preload: true,
 });
 
 const IntroductionIF = () => {
+
+
   return (
     <div className="bg-white lg:mt-[150px] md:mt-[70px] sm: mt-[70px] pb-20">
       <div className="flex justify-center">
