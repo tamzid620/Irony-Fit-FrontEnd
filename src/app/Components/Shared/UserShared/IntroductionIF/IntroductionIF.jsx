@@ -30,7 +30,7 @@ const IntroductionIF = () => {
               <div className=" relative ">
                 <Image src={rightArrow} alt="arrow logo" className="relative transition-transform duration-500 group-hover:translate-x-10" />
                 <div
-                  className={` ${rubik.className} animate__animated animate__slideInLeft absolute bottom-24 left-20 text-gray-800 uppercase font-bold`}
+                  className={` ${rubik.className} absolute bottom-24 left-20 text-gray-800 uppercase font-bold`}
                 >
                   <h1 className="text-3xl">Introduction</h1>
                   <h1 className="text-6xl -mt-2">Irony Fit</h1>
