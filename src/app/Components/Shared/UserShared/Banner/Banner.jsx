@@ -38,7 +38,7 @@ const Banner = () => {
         {/* Polygon 1 */}
         <div className="Bannerpolygen flex items-center justify-center 
         w-[350px] h-[200px]">
-          <p className="w-[450px] h-[75px] text-center skew-y-12 text-3xl font-extrabold uppercase ">
+          <p className="w-[450px] h-[75px] text-center skew-y-[17deg] text-3xl font-extrabold uppercase ">
             <span>Work</span> <br />
             <span>{text1}</span>
           </p>
@@ -48,7 +48,7 @@ const Banner = () => {
 
         {/* Polygon 2 */}
         <div  className="Bannerpolygen flex items-center justify-center mt-24">
-          <p className=" w-[450px] h-[75px] text-center skew-y-12 text-3xl font-extrabold uppercase">
+          <p className=" w-[450px] h-[75px] text-center skew-y-[17deg] text-3xl font-extrabold uppercase">
             <span>Feel</span> <br />
             <span>{text2}</span>
           </p>
@@ -62,7 +62,7 @@ const Banner = () => {
             <Image
             src={downArrrow}
             alt="down arrow icon"
-            className="w-[50px] skew-y-12 ms-5"
+            className="w-[50px] skew-y-[20deg] "
             />
           </p>
         </div>
