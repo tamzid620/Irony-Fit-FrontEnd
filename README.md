@@ -22,10 +22,10 @@ preload: true,
 ]
 
 
-trial website : https://themes.vamtam.com/?theme=f7&n=1
+* trial website : https://themes.vamtam.com/?theme=f7&n=1
 
 
-live domain link : https://irony-fit.vercel.app/
+* live domain link : https://irony-fit.vercel.app/
 
 https://animate.style/
 
