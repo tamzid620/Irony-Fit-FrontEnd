@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import navImage from "@/assests/icons/navImage.jpg";
 import menuImage from "@/assests/icons/white-menu.png";
-import arrowImage from "@/assests/icons/right-chevron.png";
+import arrowImage from "@/assests/icons/nu-arrow.png";
 import { Nunito } from "next/font/google";
 import { TbArrowBadgeRightFilled } from "react-icons/tb";
 import Swal from "sweetalert2";

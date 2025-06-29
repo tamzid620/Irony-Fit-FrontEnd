@@ -3,8 +3,9 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import coverPhoto from "@/assests/images/SecondCover.jpg";
-import arrowPhoto from "@/assests/icons/right-chevron.png";
-import apostrophe from "@/assests/icons/double-quotes.png";
+import arrowPhoto from "@/assests/icons/nu-arrow.png";
+import apostrophe1 from "@/assests/icons/double-quotes (1).png";
+import apostrophe2 from "@/assests/icons/double-quotes (2).png";
 import trainerPhoto1 from "@/assests/images/cdfu1.jpg";
 import trainerPhoto2 from "@/assests/images/cdfu4.jpg";
 import trainerPhoto3 from "@/assests/images/IIF2.jpg";
@@ -66,7 +67,7 @@ const Testimonial = () => {
               <Image
                 src={arrowPhoto}
                 alt="cover photo"
-                className="w-96 object-cover -rotate-45"
+                className="w-96 object-cover -rotate-[44deg]"
               />
             </div>
           </div>
@@ -106,12 +107,12 @@ const Testimonial = () => {
               {/* Apostrophe Icons */}
               <div>
                 <Image
-                  src={apostrophe}
+                  src={apostrophe2}
                   alt="apostrophe icon"
                   className="w-36 absolute -top-28 -left-24"
                 />
                 <Image
-                  src={apostrophe}
+                  src={apostrophe1}
                   alt="apostrophe icon"
                   className="w-36 absolute -bottom-20 right-2"
                 />

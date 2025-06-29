@@ -6,7 +6,7 @@ import photo1 from "@/assests/images/cdfu1.jpg";
 import photo2 from "@/assests/images/cdfu2.jpg";
 import photo3 from "@/assests/images/cdfu3.jpg";
 import photo4 from "@/assests/images/cdfu4.jpg";
-import rightArrow from "@/assests/icons/right-chevron.png";
+import rightArrow from "@/assests/icons/nu-arrow.png";
 import { Rubik, Nunito } from "next/font/google";
 import Swal from "sweetalert2";
 

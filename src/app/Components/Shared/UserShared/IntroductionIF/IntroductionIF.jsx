@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import rightArrow from "@/assests/icons/right-chevron.png";
+import rightArrow from "@/assests/icons/nu-arrow.png";
 import if1 from "@/assests/images/IIF1.jpg";
 import if2 from "@/assests/images/IIF3.jpg";
 import if3 from "@/assests/images/IIF2.jpg";
