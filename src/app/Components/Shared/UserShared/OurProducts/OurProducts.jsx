@@ -74,7 +74,7 @@ const OurProducts = () => {
                     />
                   </div>
                   <div className="bg-gray-800 m-1 rounded-sm px-2 pt-2 pb-12 relative">
-                    <h1 className="py-3 underline hover:text-blue-500">
+                    <h1 className="py-3 underline hover:text-green-300">
                       {equipment?.title}
                     </h1>
                     <p>$ {equipment?.price}</p>
