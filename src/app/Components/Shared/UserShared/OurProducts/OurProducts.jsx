@@ -63,10 +63,10 @@ const OurProducts = () => {
               className="relative bg-white w-[200px] rounded-sm transform hover:translate-y-2 hover:shadow-xl transition duration-300"
               >
               
-                <Link href={`/productsDetails/${equipment?.id}`}>
+                <Link href={`/OurProductDetails/${equipment?.id}`}>
                   <div className="">
                     <Image
-                      src={equipment?.image}
+                      src={equipment?.images[0]}
                       alt={equipment?.title}
                       width={200}
                       height={200}
