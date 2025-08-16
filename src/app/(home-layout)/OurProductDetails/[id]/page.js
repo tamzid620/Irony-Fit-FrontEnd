@@ -27,62 +27,89 @@ const OurProductDetails = () => {
       });
   }, [id]);
 
-  return (
-    <div
-      className={`${rubik.className} lg:max-w-7xl md:max-w-3xl max-w-sm lg:mx-auto md:mx-16 mx-3 text-white `}
-    >
-      <h1>equipment: {equipment?.length}</h1>
-      {equipment && (
-        <div key={equipment?.id}>
-          <h1 className="text-center text-[#D6FB00] text-4xl uppercase font-bold mb-8 my-20">
-            {equipment?.title}
-          </h1>
-          {isLoading ? (
-            <SharedLoading />
-          ) : equipment ? (
-            <div className="grid grid-cols-12 gap-4 ">
-              <div className="col-span-12 md:col-span-5">
-                <Image
-                  src={equipment?.images[0]}
-                  alt={equipment?.title}
-                  priority
-                  width={500}
-                  height={300}
-                  className=""
-                />
-              </div>
-              <div className="col-span-12 md:col-span-7 mt-10 leading-11">
-                <h1 className={`${nunito.className} `}>
-                  <span className="text-[#D6FB00] text-xl font-bold uppercase me-2">
-                    Name:
-                  </span>
-                  <span className=" text-xl">{equipment?.title}</span>
-                </h1>
-                <p>
-                  <span className="text-[#D6FB00] text-xl font-bold uppercase me-2">
-                    Price:
-                  </span>
-                  <span className=" text-xl">{equipment?.price}</span>
-                </p>
-                <p>
+  const formatDescription = (desc) => {
+    if (!desc) return null;
+
+    // Split into paragraphs
+    const paragraphs = desc.split("\n\n");
+
+    return paragraphs.map((para, pIndex) => {
+      // If the paragraph contains bullet points (\n-)
+      if (para.includes("\n-")) {
+        const bulletPoints = para.split("\n-").filter(Boolean); // Remove empty
+        return (
+          <ul key={pIndex} className="list-disc list-inside mb-4">
+            {bulletPoints.map((point, i) => (
+              <li key={i} className="text-xl">{point.trim()}</li>
+            ))}
+          </ul>
+        );
+      }
+    })} 
+
+      return (
+        <div
+          className={`${rubik.className} lg:max-w-7xl md:max-w-3xl max-w-sm lg:mx-auto md:mx-16 mx-3 text-white `}
+        >
+          <h1>equipment: {equipment?.length}</h1>
+          {equipment && (
+            <div key={equipment?.id}>
+              <h1 className="text-center text-[#D6FB00] text-4xl uppercase font-bold mb-8 my-20">
+                {equipment?.title}
+              </h1>
+              {isLoading ? (
+                <SharedLoading />
+              ) : equipment ? (
+                <div className="grid grid-cols-12 gap-4 ">
+                  <div className="col-span-12 md:col-span-5">
+                    <Image
+                      src={equipment?.images[0]}
+                      alt={equipment?.title}
+                      priority
+                      width={500}
+                      height={300}
+                      className=""
+                    />
+                  </div>
+                  <div className="col-span-12 md:col-span-7 mt-10 leading-11">
+                    <h1 className={`${nunito.className} `}>
+                      <span className="text-[#D6FB00] text-xl font-bold uppercase me-2">
+                        Name:
+                      </span>
+                      <span className=" text-xl">{equipment?.title}</span>
+                    </h1>
+                    <p>
+                      <span className="text-[#D6FB00] text-xl font-bold uppercase me-2">
+                        Price:
+                      </span>
+                      <span className=" text-xl">{equipment?.price}</span>
+                    </p>
+                    {/* <p>
                   <span className="text-[#D6FB00] text-xl font-bold uppercase me-2">
                     Description:
                   </span>
                   <span className=" text-xl">{equipment?.description}</span>
-                </p>
-                <p>
-                  <span className="text-[#D6FB00] text-xl font-bold uppercase me-2">
-                    Rating:
-                  </span>
-                  <span className=" text-xl">{equipment?.rating}</span>
-                </p>
-              </div>
-            </div>
-          ) : null}
-        </div>
-      )}
-    </div>
-  );
-};
+                </p> */}
+                    <p>
+                      <span className="text-[#D6FB00] text-xl font-bold uppercase me-2">
+                        Description:
+                      </span>
+                      <div>{formatDescription(equipment?.description)}</div>
+                    </p>
 
-export default OurProductDetails;
+                    <p>
+                      <span className="text-[#D6FB00] text-xl font-bold uppercase me-2">
+                        Rating:
+                      </span>
+                      <span className=" text-xl">{equipment?.rating}</span>
+                    </p>
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          )}
+        </div>
+      );
+    };
+
+    export default OurProductDetails;

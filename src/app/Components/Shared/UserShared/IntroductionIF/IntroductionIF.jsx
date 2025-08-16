@@ -52,13 +52,13 @@ const IntroductionIF = () => {
                   alt="story picture"
                   className="w-full h-[450px] object-cover"
                 />
-                <h1 className={` ${rubik.className} font-bold text-3xl my-2 `}>
+                <h1 className={` ${rubik.className} font-bold text-3xl my-5 uppercase`}>
                   Mission
                 </h1>
                 <p className={`${nunito.className}  text-lg `}>
                   Our purpose is to pass on empowering knowledge and training
                   guidance in order to have a positive impact on the health and
-                  fitness of everyone we work with. <br /> <br />
+                  fitness of everyone we work with. <br />
                   To provide a personalised health and fitness service that
                   unlocks every individual’s true potential so they can achieve
                   their desired goals.
@@ -74,7 +74,7 @@ const IntroductionIF = () => {
                   alt="story picture"
                   className="w-full h-[450px] object-cover"
                 />
-                <h1 className={` ${rubik.className} font-bold text-3xl my-2 `}>
+                <h1 className={` ${rubik.className} font-bold text-3xl my-5 uppercase `}>
                   Story
                 </h1>
                 <p className={`${nunito.className}  text-lg `}>
@@ -91,7 +91,7 @@ const IntroductionIF = () => {
                   alt="story picture"
                   className="w-full h-[450px] object-cover"
                 />
-                <h1 className={` ${rubik.className} font-bold text-3xl my-2 `}>
+                <h1 className={` ${rubik.className} font-bold text-3xl my-5 uppercase `}>
                   Approach
                 </h1>
                 <p className={`${nunito.className}  text-lg `}>

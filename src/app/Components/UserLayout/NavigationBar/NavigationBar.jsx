@@ -13,30 +13,29 @@ import Swal from "sweetalert2";
 const nunito = Nunito({
   weight: ["300", "400", "700", "900"],
   subsets: ["latin"],
-preload: true, 
+  preload: true,
 });
 
 const navlist = [
   {
-    path: "",
+    path: "/",
     name: "Home",
   },
   {
-    path: "",
+    path: "/",
     name: "Classes",
   },
   {
-    path: "",
+    path: "/",
     name: "Membership",
   },
   {
-    path: "",
+    path: "/",
     name: "About",
   },
 ];
 
 const NavigationBar = () => {
-
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMenu = () => {
@@ -48,9 +47,9 @@ const NavigationBar = () => {
       icon: "warning",
       title: "in progress!",
       showConfirmButton: false,
-      timer: 1500
+      timer: 1500,
     });
-  }
+  };
 
   return (
     <nav className=" bg-gray-900 text-[#D6FB00] py-1 z-50 relative">
@@ -64,7 +63,10 @@ const NavigationBar = () => {
         <ul className={`${nunito.className} flex gap-8  `}>
           {navlist.map(({ path, name }, index) => (
             <Link key={index} href={path} className="relative group">
-              <li onClick={handleInProgress} className=" uppercase font-extrabold text-sm relative">
+              <li
+                // onClick={handleInProgress}
+                className=" uppercase font-extrabold text-sm relative"
+              >
                 {name}
               </li>
               <hr className="navHrPolygen absolute top-5 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
@@ -115,7 +117,10 @@ const NavigationBar = () => {
           <ul className={`${nunito.className} block text-center relative z-50`}>
             {navlist.map(({ path, name }, index) => (
               <Link key={index} href={path} className="relative group block">
-                <li onClick={handleInProgress} className="uppercase font-extrabold text-sm relative leading-[50px] hover:bg-[#D6FB00] hover:text-black">
+                <li
+                  // onClick={handleInProgress}
+                  className="uppercase font-extrabold text-sm relative leading-[50px] hover:bg-[#D6FB00] hover:text-black"
+                >
                   {name}
                 </li>
               </Link>
