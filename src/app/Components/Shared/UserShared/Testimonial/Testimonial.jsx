@@ -75,7 +75,7 @@ const Testimonial = () => {
       </div>
 
       {/* --------------------------- Review Section ---------------------------*/}
-      <div className="lg:max-w-7xl md:max-w-3xl sm:max-w-sm lg:mx-auto md:mx-8 sm:mx-10">
+      <div className="lg:max-w-7xl md:max-w-3xl sm:max-w-sm lg:mx-auto md:mx-8 sm: mx-10">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -83,7 +83,7 @@ const Testimonial = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 items-center lg:mx-32"
+            className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 items-center lg:mx-32 md:gap-16"
           >
             <div>
               <Image
@@ -95,7 +95,7 @@ const Testimonial = () => {
 
             {/* Review Content */}
             <div className="relative">
-              <div className="relative lg:mx-6">
+              <div className="relative lg:mx-6 md:mt-0 mt-10">
                 <p className={` ${rubik.className} text-[22px] mb-3 `}>
                   {reviewData[currentIndex].reviewText}
                 </p>
@@ -109,12 +109,12 @@ const Testimonial = () => {
                 <Image
                   src={apostrophe2}
                   alt="apostrophe icon"
-                  className="w-36 absolute -top-28 -left-24"
+                  className="lg:w-36 md:w-28 w-20 absolute md:-top-28 -top-2 md:-left-20 -left-14"
                 />
                 <Image
                   src={apostrophe1}
                   alt="apostrophe icon"
-                  className="w-36 absolute -bottom-20 right-2"
+                  className="lg:w-36 md:w-28 w-20 absolute md:-bottom-20 -bottom-10  right-2"
                 />
               </div>
             </div>

@@ -12,7 +12,7 @@ const Home = () => {
             <Banner />
             <ClasseDesignForU />
             <IntroductionIF />
-            <OurProducts/>
+            {/* <OurProducts/> */}
             <Testimonial/>
         </div>
     );

@@ -22,7 +22,7 @@ const IntroductionIF = () => {
   return (
     <div className="bg-white text-black lg:mt-[150px] md:mt-[70px] sm: mt-[70px] pb-20">
       <div className="flex justify-center">
-        <div className=" lg:max-w-7xl md:max-w-3xl sm: max-w-sm  md:mx-0 sm: mx-10">
+        <div className=" lg:max-w-7xl md:max-w-3xl sm: max-w-sm  md:mx-0 sm: mx-8">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 sm: grid-cols-1 ">
             {/* grid div -1  */}
             {/* title section  */}

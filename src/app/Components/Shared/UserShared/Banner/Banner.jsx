@@ -32,7 +32,7 @@ const Banner = () => {
       <div className="absolute
       lg:top-[40%] lg:left-[41%] 
       md:top-[20%] md:left-[28%] 
-      sm: top-[20%] sm: left-[10%] 
+      sm: top-[20%] sm: left-[3%] 
       text-gray-900
       ">
         {/* Polygon 1 */}

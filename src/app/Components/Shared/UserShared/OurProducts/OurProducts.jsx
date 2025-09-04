@@ -56,11 +56,11 @@ const OurProducts = () => {
         {isLoading ? (
           <SharedLoading />
         ) : (
-          <div className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-10 ">
+          <div className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 md:gap-10  gap-3">
             {allEquipments.map((equipment) => (
               <div
               key={equipment?.id}
-              className="relative bg-white w-[200px] rounded-sm transform hover:translate-y-2 hover:shadow-xl transition duration-300"
+              className="relative bg-white md:w-[200px] w-full rounded-sm transform hover:translate-y-2 hover:shadow-xl transition duration-300"
               >
               
                 <Link href={`/OurProductDetails/${equipment?.id}`}>
@@ -82,7 +82,7 @@ const OurProducts = () => {
                 </Link>
                 <button
                   onClick={() => handleAddToCart(equipment)}
-                  className="absolute bottom-0 w-[185px] bg-gray-500 hover:bg-gray-700 uppercase py-2 m-2"
+                  className="absolute bottom-0 md:w-[185px] w-[155px] bg-gray-500 hover:bg-gray-700 uppercase py-2 m-2"
                 >
                   Add to cart
                 </button>
