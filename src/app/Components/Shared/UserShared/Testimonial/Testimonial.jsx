@@ -89,7 +89,7 @@ const Testimonial = () => {
               <Image
                 src={reviewData[currentIndex].reviewImage}
                 alt="Trainer photo"
-                className="w-[400px] h-[600px]"
+                className="w-[400px] h-[400px] object-cover"
               />
             </div>
 

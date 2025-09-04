@@ -30,9 +30,7 @@ const OurProductDetails = () => {
   const formatDescription = (desc) => {
     if (!desc) return null;
 
-    // Split into paragraphs
     const paragraphs = desc.split("\n\n");
-
     return paragraphs.map((para, pIndex) => {
       // If the paragraph contains bullet points (\n-)
       if (para.includes("\n-")) {
