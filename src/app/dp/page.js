@@ -21,6 +21,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import DashboardBody from './DashboardBody/DashboardBody';
+import AccountMenu from './AccountMenu/AccountMenu';
 
 const drawerWidth = 240;
 
@@ -119,7 +120,8 @@ const Dashboard = () =>{
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar position="fixed" open={open} sx={{backgroundColor:'#000043'}}>
-        <Toolbar>
+        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+            <div className='flex items-center'>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -137,6 +139,10 @@ const Dashboard = () =>{
           <Typography variant="h6" noWrap component="div" sx={{ textTransform: 'uppercase', fontWeight: 'bold', fontSize: 15 , color:'white' }}>
             Admin Panel
           </Typography>
+            </div>
+            <div>
+                <AccountMenu/>
+            </div>
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open} >
